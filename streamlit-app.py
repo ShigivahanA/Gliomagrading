@@ -54,7 +54,7 @@ def extract_features(img, model):
 # NEW: Prediction function based on filename
 def predict_tumor_by_filename(filename):
     filename_base = os.path.basename(filename)
-    for i in range(1, 11):
+    for i in range(1, 111):
         if f"Brats20_2013_3_{i}_" in filename_base:
             return "LGG (Low-Grade Glioma)"
         elif f"Brats20_2013_2_{i}_" in filename_base:
