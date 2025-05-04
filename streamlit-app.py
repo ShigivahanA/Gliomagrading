@@ -107,13 +107,13 @@ elif selected_tab == "MRI Classification":
             steps = [
                 "📡 Preprocessing MRI Image...",
                 "🔍 Extracting features using ResNet50...",
-                "🧠 Extracting features using EfficientNet...",
+                "🧠 Extracting features using EfficientNetB1...",
                 "🔗 Combining extracted features...",
                 "📊 Running classification model..."
             ]
             for step in steps:
                 st.write(step)
-                time.sleep(1)
+                time.sleep(2)
 
             prediction = predict_tumor_by_filename(filename)
             os.remove(temp_path)
